@@ -1,0 +1,19 @@
+<div>
+  
+    <input type="text" placeholder="enter image url" [(ngModel)]="imageURL"><br><br>
+    <input type="text" placeholder="enter name" [(ngModel)]="name"><br><br>
+    <input type="text" placeholder="enter email" [(ngModel)]="email"><br><br>
+    <input type="text" placeholder="enter phno" [(ngModel)]="phno"><br><br>
+    <button (click)="hide()">submit</button>
+  
+</div>
+<div [class.hide]="isHide" class="something">
+  <div>
+    <p>name: {{name}}</p>
+    <p>Email: {{email}}</p>
+    <p>Phno: {{phno}}</p>
+  </div>
+  <div>
+  <img [src]="imageURL" alt="image">
+  </div>
+</div>
